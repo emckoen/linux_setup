@@ -1,5 +1,8 @@
 #!/bin/bash
 
-sudo apt install vim-gtk3
-sudo apt install tmux
+cp .bash_aliases ~/
+cp .tmux.conf ~/
 
+sudo apt install vim-gtk3 -y
+sudo apt install tmux -y
+sudo apt install build-essential -y
