@@ -1,0 +1,30 @@
+[user]
+	name = Ethan McKoen
+	email = ethan.mckoen@gmail.com
+[core]
+	editor = vim
+	pager = less -qRS -+X -+F
+[color]
+	ui = auto
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+	whitespace = 
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
+[alias]
+	lg = log --graph --pretty=tformat:'%Cred%h%Creset - %Cgreen(%ad %an)%Creset %C(yellow)%d%Creset%n%s' --abbrev-commit --date=local --date-order
+	gl = !git --no-pager log --graph --pretty=tformat:'%Cred%h%Creset - %Cgreen(%ad %an)%Creset %C(yellow)%d%Creset%n%s' --abbrev-commit --date=local --date-order -15
+	st = status
+	br = branch -vv
+	co = commit -v
+	smu = submodule update --init --recursive
+	amend = commit --amend -C HEAD
